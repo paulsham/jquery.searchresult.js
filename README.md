@@ -18,24 +18,19 @@ $('input[type="text"], textarea').searchresult('init',{
   jsonPathText: '_source.body'
 });
 
-AJAXpath (string)*
----------------------
+### AJAXpath (string)*
 Required. Path to AJAX service.
 
-jsonPathLink (string)*
----------------------
+### jsonPathLink (string)*
 Required. Path to traverse JSON object to search result link.
 
-jsonPathText (string)*
----------------------
+### jsonPathText (string)*
 Required. Path to traverse JSON object to search result text.
 
-resultLimit (variable)
----------------------
+### resultLimit (variable)
 _Default: 0_
 
-noResultsText (string)
----------------------
+### noResultsText (string)
 _Default: 'No search results found.'_
 
 
