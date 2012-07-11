@@ -1,3 +1,8 @@
+/*
+* jQuery searchresult v0.0
+* by Paul Sham (@paul_sham)
+*/
+
 ;(function($){
   "use strict";
   
@@ -15,8 +20,8 @@
         
         function initResults(){
           $searchField
-          .addClass('searchResult')
-          .after('<ul class="searchResult-results"></ul>')
+          .addClass(settings.inputClass)
+          .after('<ul class="'+settings.resultClass+'"></ul>')
           .on({
             keyup: function(e){
               if(e.keyCode == 40 || e.keyCode == 38){
@@ -189,6 +194,8 @@
     AJAXpath: 'demo.json',
     jsonPathLink: '_source.shortUrl',
     jsonPathText: '_source.body',
-    noResultsText: 'No search results found.'
+    noResultsText: 'No search results found.',
+    inputClass: 'searchResult',
+    resultClass: 'searchResult-results'
   };
 })(jQuery);

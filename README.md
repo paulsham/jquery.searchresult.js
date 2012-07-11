@@ -27,6 +27,12 @@ Required. Path to traverse JSON object to search result link.
 ### jsonPathText (string)*
 Required. Path to traverse JSON object to search result text.
 
+### inputClass (string)
+_Default: 'searchResult'_
+
+### resultClass (string)
+_Default: 'searchResult-results'_
+
 ### resultLimit (variable)
 _Default: 0_
 
