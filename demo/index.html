@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="css/demo.css" />
+  </head>
+  <body>
+  
+    <form action="">
+      <label for="">Input</label>
+      <input type="" />
+      
+      <label for="">Textarea</label>
+      <textarea name="" id="" cols="30" rows="10"></textarea>
+    </form>
+    
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="js/searchResult.jquery.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        $('input, textarea').searchResult({
+          initDelay: 1
+        });
+      });
+    </script>
+  
+  </body>
+</html>

@@ -1,0 +1,96 @@
+.searchResult-results{
+  display: none;
+  font-family: Helvetica, Arial, sans-serif;
+  list-style: none;
+  padding-left: 0;
+  position: relative;
+
+  background-color: #eeeeee;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#eeeeee), to(#dddddd));
+  background-image: -webkit-linear-gradient(top, #eeeeee, #dddddd);
+  background-image:    -moz-linear-gradient(top, #eeeeee, #dddddd);
+  background-image:      -o-linear-gradient(top, #eeeeee, #dddddd);
+  background-image:         linear-gradient(to bottom, #eeeeee, #dddddd);
+  
+
+  -webkit-border-radius: 12px;
+          border-radius: 12px;
+
+ 
+  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+  
+
+  -webkit-box-shadow: 0 3px 4px 0px #000;
+          box-shadow: 0 3px 4px 0px #000;
+}
+
+.searchResult-show{
+  display: block;
+}
+
+.searchResult-results a{
+  color: #2685f0;
+  display: block;
+  padding: 8px 8px;
+  text-decoration: none;
+  position: relative;
+}
+
+.searchResult-results a strong{
+  /* font-weight: normal; */
+  color: #0c5cb5;
+}
+
+.searchResult-results li:first-child a{
+  -webkit-border-radius: 12px 12px 0 0;
+          border-radius: 12px 12px 0 0;
+}
+
+.searchResult-results li:last-child a{
+  -webkit-border-radius: 0 0 12px 12px;
+          border-radius: 0 0 12px 12px;
+}
+
+.searchResult-results a:hover,
+.searchResult-results .focus a,
+.searchResult-results a:focus{
+  color: #222;
+  background-color: #f8f8f8;
+  outline: 0;
+}
+.searchResult-results a:hover strong,
+.searchResult-results .focus a strong,
+.searchResult-results a:focus strong{
+  color: #000;
+}
+
+
+
+
+
+
+.searchResult-results:after,.searchResult-results:before {
+	bottom:100%;
+	border:solid transparent;
+	content:" ";
+	height:0;
+	width:0;
+	position:absolute;
+	pointer-events:none;
+}
+
+.searchResult-results:after {
+	border-bottom-color:#eee;
+	border-width:15px;
+	left:50%;
+	margin-left:-15px;
+}
+
+/*
+.searchResult-results:before {
+	border-bottom-color:#c2e1f5;
+	border-width:18px;
+	left:50%;
+	margin-left:-18px
+}
+*/

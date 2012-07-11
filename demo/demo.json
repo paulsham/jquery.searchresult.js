@@ -1,0 +1,402 @@
+[{
+    "_index": "fq-production",
+    "_type": "question",
+    "_id": "4fd91689959391401d0000a6",
+    "_score": 0.36008593,
+    "_source": {
+        "_id": "4fd91689959391401d0000a6",
+        "assignedTo": "TribalAdmin",
+        "body": "What percentage of a Big Mac meat patty is filler, and what is that filler made of?",
+        "category": "Ingredients",
+        "completedAt": "2012-06-13T22:46:40.028Z",
+        "sequenceId": 3699,
+        "shortUrl": "http://qmcd.ca/L63Ktq",
+        "createdAt": "2012-06-13T22:39:05.743Z",
+        "tags": [],
+        "status": "Complete",
+        "lang": "en",
+        "knowledgeBase": false,
+        "stats": {
+            "heatRank": 627,
+            "heatScore": 411,
+            "hotness": 14,
+            "sharesToday": 0,
+            "sharesTotal": 0,
+            "viewsToday": 0,
+            "viewsTotal": 411
+        },
+        "heatFactor": {
+            "total": 0,
+            "today": 0
+        },
+        "hasProfanity": false,
+        "answer": {
+            "body": "Zero, Matt. Not a single percent of the Big Mac patty is filler. We simply make our patties out of 100% pure Canadian beef.&nbsp;"
+        },
+        "id": "4fd91689959391401d0000a6"
+    }
+}, {
+    "_index": "fq-production",
+    "_type": "question",
+    "_id": "4fd804340da9d3be36000002",
+    "_score": 0.35541466,
+    "_source": {
+        "completedAt": "2012-06-18T12:35:55.012Z",
+        "_id": "4fd804340da9d3be36000002",
+        "assignedTo": "McDAdmin",
+        "body": "what pies are available now?",
+        "category": "Other",
+        "sequenceId": 2778,
+        "createdAt": "2012-06-13T03:08:36.561Z",
+        "tags": ["4fc2b178e1dd88bf6901ef0a"],
+        "status": "Complete",
+        "lang": "en",
+        "knowledgeBase": false,
+        "stats": {
+            "heatRank": 869,
+            "heatScore": 0,
+            "hotness": 0,
+            "sharesToday": 0,
+            "sharesTotal": 0,
+            "viewsToday": 0,
+            "viewsTotal": 0
+        },
+        "heatFactor": {
+            "total": 0,
+            "today": 0
+        },
+        "hasProfanity": false,
+        "answer": {
+            "body": "<p></p><div>Hey Rolfe. The pie that is currently available in every restaurant is the Baked Apple Pie. However, additional flavours are often available for limited-time offer. Have a visit to your local McDonald's to see what else is available.<br></div><p></p>"
+        },
+        "id": "4fd804340da9d3be36000002"
+    }
+}, {
+    "_index": "fq-production",
+    "_type": "question",
+    "_id": "4fd8e30c617f19c411000791",
+    "_score": 0.35541466,
+    "_source": {
+        "_id": "4fd8e30c617f19c411000791",
+        "assignedTo": "McDAdmin",
+        "body": "What is McChicken sauce?",
+        "category": "Ingredients",
+        "completedAt": "2012-06-20T16:10:58.196Z",
+        "sequenceId": 3314,
+        "shortUrl": "http://qmcd.ca/Lxgjwr",
+        "createdAt": "2012-06-13T18:59:24.462Z",
+        "tags": [],
+        "status": "Complete",
+        "lang": "en",
+        "knowledgeBase": false,
+        "stats": {
+            "heatRank": 234,
+            "heatScore": 2726,
+            "hotness": 18,
+            "sharesToday": 0,
+            "sharesTotal": 0,
+            "viewsToday": 8,
+            "viewsTotal": 2727
+        },
+        "heatFactor": {
+            "total": 0,
+            "today": 0
+        },
+        "hasProfanity": false,
+        "answer": {
+            "body": "Hey Kristyn. The McChicken Sauce is the sauce we dress the McChicken with. If you're looking to see what the ingredients are in the McChicken Sauce, that information can be found right in our <a href=\"http://www.mcdonalds.ca/ca/en/food/nutrition_calculator.html\">FoodFacts</a> page."
+        },
+        "id": "4fd8e30c617f19c411000791"
+    }
+}, {
+    "_index": "fq-production",
+    "_type": "question",
+    "_id": "4fd8ef49fba19ca454000160",
+    "_score": 0.35541466,
+    "_source": {
+        "_id": "4fd8ef49fba19ca454000160",
+        "assignedTo": "McDAdmin",
+        "body": "would the CEO of your company eat at a McDonalds?",
+        "category": "Other",
+        "completedAt": "2012-07-04T12:39:14.240Z",
+        "sequenceId": 3381,
+        "shortUrl": "http://qmcd.ca/LxfPpX",
+        "createdAt": "2012-06-13T19:51:37.295Z",
+        "tags": [{
+            "value": "draft",
+            "_id": "4fc2b178e1dd88bf6901ef0a"
+        }],
+        "status": "Complete",
+        "lang": "en",
+        "knowledgeBase": false,
+        "stats": {
+            "heatRank": 935,
+            "heatScore": 146,
+            "hotness": 12,
+            "sharesToday": 0,
+            "sharesTotal": 0,
+            "viewsToday": 0,
+            "viewsTotal": 146
+        },
+        "heatFactor": {
+            "total": 0,
+            "today": 0
+        },
+        "hasProfanity": false,
+        "answer": {
+            "body": "<p>Definitely, Kaolin. John Betts, President and CEO of McDonald's Canada, is extremely proud of what we serve and does eat our food. What his favourite burger is, we don't know!</p>"
+        },
+        "id": "4fd8ef49fba19ca454000160"
+    }
+}, {
+    "_index": "fq-production",
+    "_type": "question",
+    "_id": "4fd91336a177bdc3560003b0",
+    "_score": 0.3519412,
+    "_source": {
+        "_id": "4fd91336a177bdc3560003b0",
+        "assignedTo": "McDAdmin",
+        "body": "what else is your burgers",
+        "category": "Beef",
+        "completedAt": "2012-06-15T13:51:35.939Z",
+        "sequenceId": 3672,
+        "shortUrl": "http://qmcd.ca/Kz8QjU",
+        "thumbnail": {
+            "title": "",
+            "description": "",
+            "url": "http://fq-production.s3.amazonaws.com/4fd91336a177bdc3560003b0/answer/McD_FQ_IA_100_Beef_THUMB_WO.jpg",
+            "filename": "McD_FQ_IA_100_Beef_THUMB_WO.jpg",
+            "_id": "4fdb3daf2deeb31402f8062a"
+        },
+        "createdAt": "2012-06-13T22:24:54.647Z",
+        "tags": [{
+            "value": "draft",
+            "_id": "4fc2b178e1dd88bf6901ef0a"
+        }],
+        "status": "Complete",
+        "lang": "en",
+        "knowledgeBase": false,
+        "stats": {
+            "heatRank": 877,
+            "heatScore": 42,
+            "hotness": 6,
+            "sharesToday": 0,
+            "sharesTotal": 0,
+            "viewsToday": 1,
+            "viewsTotal": 43
+        },
+        "heatFactor": {
+            "total": 0,
+            "today": 0
+        },
+        "hasProfanity": false,
+        "answer": {
+            "body": "<p>Hi there Bob. Our burgers are 100% pure Canadian beef with no additives, fillers, or preservatives. We season them with a pinch of salt and pepper after cooking. What else? They're juicy and delicious. <br></p>"
+        },
+        "id": "4fd91336a177bdc3560003b0"
+    }
+}, {
+    "_index": "fq-production",
+    "_type": "question",
+    "_id": "4fd81808bec8103f37006dd8",
+    "_score": 0.33076006,
+    "_source": {
+        "completedAt": "2012-06-20T15:49:34.996Z",
+        "_id": "4fd81808bec8103f37006dd8",
+        "assignedTo": "McDAdmin",
+        "body": "is it true  that your fries last several weeks ? what kind of preservatives  do you use ?\n",
+        "category": "Other",
+        "sequenceId": 2805,
+        "shortUrl": "http://qmcd.ca/NKOIuX",
+        "createdAt": "2012-06-13T04:33:12.529Z",
+        "tags": ["4fc2b178e1dd88bf6901ef0a"],
+        "status": "Complete",
+        "lang": "en",
+        "knowledgeBase": false,
+        "stats": {
+            "heatRank": 1159,
+            "heatScore": 1,
+            "hotness": 1,
+            "sharesToday": 0,
+            "sharesTotal": 0,
+            "viewsToday": 0,
+            "viewsTotal": 1
+        },
+        "heatFactor": {
+            "total": 0,
+            "today": 0
+        },
+        "hasProfanity": false,
+        "answer": {
+            "body": "<p>Hi Rod. No that's not true. Our fries are best when they're hot and fresh. What you've heard about is our fries drying out. For a better description of what happens, <a href=\"http://yourquestions.mcdonalds.ca/questions/218\">read this explanation</a> from&nbsp;Dr. Keith Warriner, Program Director of the University of Guelph's Food Safety and Quality Assurance program.</p>"
+        },
+        "id": "4fd81808bec8103f37006dd8"
+    }
+}, {
+    "_index": "fq-production",
+    "_type": "question",
+    "_id": "4fe692dfa53a227237000009",
+    "_score": 0.33076006,
+    "_source": {
+        "_id": "4fe692dfa53a227237000009",
+        "assignedTo": "McDAdmin",
+        "body": "Does the food at McDonald's contain more calories than what you would make at home? If so, why is that?",
+        "category": "Nutrition",
+        "completedAt": "2012-06-24T15:55:40.555Z",
+        "sequenceId": 5152,
+        "shortUrl": "http://qmcd.ca/Lhvur0",
+        "createdAt": "2012-06-24T04:09:03.743Z",
+        "tags": [{
+            "value": "draft",
+            "_id": "4fc2b178e1dd88bf6901ef0a"
+        }],
+        "status": "Complete",
+        "lang": "en",
+        "knowledgeBase": false,
+        "stats": {
+            "heatRank": 1911,
+            "heatScore": 17,
+            "hotness": 2,
+            "sharesToday": 0,
+            "sharesTotal": 0,
+            "viewsToday": 1,
+            "viewsTotal": 18
+        },
+        "heatFactor": {
+            "total": 0,
+            "today": 0
+        },
+        "hasProfanity": false,
+        "answer": {
+            "body": "<p>Thanks for your question, Connor. Many of the ingredients in our menu items are similar or identical to what you would buy at your grocery store. What that means is that the caloric content of our 100% Canadian beef patties, for instance, is comparable to beef patties of the same weight that you might find at your local grocer. It really comes down to the ingredients you're using and your methods of cooking. We’re proud of our food and believe McDonald’s can be part of a balanced diet.</p>"
+        },
+        "id": "4fe692dfa53a227237000009"
+    }
+}, {
+    "_index": "fq-production",
+    "_type": "question",
+    "_id": "4fd19cd88309af860f000102",
+    "_score": 0.32327867,
+    "_source": {
+        "_id": "4fd19cd88309af860f000102",
+        "assignedTo": "McDAdmin",
+        "body": "how  come  what  you serve looks  nothing  like  what  you advertise  ",
+        "category": "Other",
+        "completedAt": "2012-06-20T11:41:17.471Z",
+        "sequenceId": 2111,
+        "shortUrl": "http://qmcd.ca/Lief9S",
+        "thumbnail": {
+            "title": "",
+            "description": "",
+            "url": "http://fq-production.s3.amazonaws.com/4fd19cd88309af860f000102/answer/McD_FQ_IA_behind2_THUMB.jpg",
+            "filename": "McD_FQ_IA_behind2_THUMB.jpg",
+            "_id": "4fe0c9088a1cb35e47c22632"
+        },
+        "createdAt": "2012-06-08T06:34:00.224Z",
+        "tags": [{
+            "value": "draft",
+            "_id": "4fc2b178e1dd88bf6901ef0a"
+        }],
+        "status": "Complete",
+        "lang": "en",
+        "knowledgeBase": false,
+        "stats": {
+            "heatRank": 1161,
+            "heatScore": 67,
+            "hotness": 9,
+            "sharesToday": 0,
+            "sharesTotal": 0,
+            "viewsToday": 0,
+            "viewsTotal": 67
+        },
+        "heatFactor": {
+            "total": 0,
+            "today": 0
+        },
+        "hasProfanity": false,
+        "answer": {
+            "body": "<p>Hey Chris. If you take a look at the image above, you can see that you're right. They don't look the same. But what is the same is the flavour and the ingredients. The difference is a lot more time is spent styling the food. For example, the ingredients for the Quarter Pounder with Cheese is placed on the front of the burger so that you can see what's inside.&nbsp;</p><div><br></div><div>To see the behind the scenes footage of how we shot that image above, <a href=\"http://yourquestions.mcdonalds.ca/questions/224\">take a look at this video here</a>.</div><p></p>"
+        },
+        "id": "4fd19cd88309af860f000102"
+    }
+}, {
+    "_index": "fq-production",
+    "_type": "question",
+    "_id": "4fd8bf7f45eb092743001a3e",
+    "_score": 0.32327867,
+    "_source": {
+        "_id": "4fd8bf7f45eb092743001a3e",
+        "assignedTo": "McDAdmin",
+        "body": "What are the ingredients for your poutine?\nDoes it contain any meat?\nIs your poutine gravy vegan?\nIs the poutine 100% vegan?",
+        "category": "Ingredients",
+        "completedAt": "2012-06-26T20:47:37.190Z",
+        "sequenceId": 3123,
+        "shortUrl": "http://qmcd.ca/L8AaiB",
+        "createdAt": "2012-06-13T16:27:43.389Z",
+        "tags": [{
+            "value": "draft",
+            "_id": "4fc2b178e1dd88bf6901ef0a"
+        }],
+        "status": "Complete",
+        "lang": "en",
+        "knowledgeBase": false,
+        "stats": {
+            "heatRank": 1963,
+            "heatScore": 8,
+            "hotness": 1,
+            "sharesToday": 0,
+            "sharesTotal": 0,
+            "viewsToday": 1,
+            "viewsTotal": 9
+        },
+        "heatFactor": {
+            "total": 0,
+            "today": 0
+        },
+        "hasProfanity": false,
+        "answer": {
+            "body": "<p>Hi Jagdish. Our gravy is neither vegan nor vegetarian, as it contains chicken fat. It's part of what gives it such a great flavour. Our cheese curds are a dairy product and are therefore not vegan. For more information about what exactly is in our menu items, please visit the <a href=\"http://www.mcdonalds.ca/ca/en/food/nutrition_calculator.html\">FoodFacts PDF</a>&nbsp;on our website.</p>"
+        },
+        "id": "4fd8bf7f45eb092743001a3e"
+    }
+}, {
+    "_index": "fq-production",
+    "_type": "question",
+    "_id": "4fd82fcf06865c604b00002b",
+    "_score": 0.32220566,
+    "_source": {
+        "_id": "4fd82fcf06865c604b00002b",
+        "assignedTo": "McDAdmin",
+        "body": "what is the difference between local products you buy from the super markets and the supplies you get from suppliers and farms? ",
+        "category": "Ingredients",
+        "completedAt": "2012-06-21T20:38:41.806Z",
+        "sequenceId": 2865,
+        "shortUrl": "http://qmcd.ca/L8KSpw",
+        "createdAt": "2012-06-13T06:14:39.607Z",
+        "tags": [{
+            "value": "draft",
+            "_id": "4fc2b178e1dd88bf6901ef0a"
+        }],
+        "status": "Complete",
+        "lang": "en",
+        "knowledgeBase": false,
+        "stats": {
+            "heatRank": 1442,
+            "heatScore": 27,
+            "hotness": 5,
+            "sharesToday": 0,
+            "sharesTotal": 0,
+            "viewsToday": 0,
+            "viewsTotal": 27
+        },
+        "heatFactor": {
+            "total": 0,
+            "today": 0
+        },
+        "hasProfanity": false,
+        "answer": {
+            "body": "<p>Hey Queena. You might not know it, but most of our suppliers also supply grocery stores. We use suppliers like Cargill, Quaker, Canada Bread, Heinz, Coca-Cola, McCain, Saputo, Danone and the list goes on. There isn't much difference between what you buy at the grocery store and what we buy. We just buy more of it!</p>"
+        },
+        "id": "4fd82fcf06865c604b00002b"
+    }
+}]
