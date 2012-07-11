@@ -5,12 +5,12 @@ A jQuery plugin that passes an input value to a service and formats the JSON obj
 
 
 Usage
-======================
+---------------------
 
 $('input[type="text"], textarea').searchresult();
 
 Options
-======================
+---------------------
 
 $('input[type="text"], textarea').searchresult('init',{
   AJAXpath: 'demo.json',
@@ -36,6 +36,6 @@ _Default: 'No search results found.'_
 
 
 Changelog
-======================
+---------------------
 v0.0
   + Initial upload.
