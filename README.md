@@ -7,16 +7,16 @@ A jQuery plugin that passes an input value to a service and formats the JSON obj
 Usage
 ---------------------
 
-$('input[type="text"], textarea').searchresult();
+    $('input[type="text"], textarea').searchresult();
 
 Options
 ---------------------
 
-$('input[type="text"], textarea').searchresult('init',{
-  AJAXpath: 'demo.json',
-  jsonPathLink: '_source.shortUrl',
-  jsonPathText: '_source.body'
-});
+    $('input[type="text"], textarea').searchresult('init',{
+      AJAXpath: 'demo.json',
+      jsonPathLink: '_source.shortUrl',
+      jsonPathText: '_source.body'
+    });
 
 ### AJAXpath (string)*
 Required. Path to AJAX service.
