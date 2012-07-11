@@ -6,7 +6,7 @@
 
   var methods = {
     init: function(options){
-      settings = $.extend($.fn.searchResult.defaults, options);
+      settings = $.extend($.fn.searchresult.defaults, options);
       
       return this.each(function(){
         var $searchField = $(this);
@@ -171,7 +171,7 @@
     }
   };
   
-  $.fn.searchResult = function(method, options){
+  $.fn.searchresult = function(method, options){
     if ( methods[method] ) {
       return methods[method].apply( this, Array.prototype.slice.call( arguments, 1 ));
     } else if ( typeof method === 'object' || ! method ) {
@@ -181,7 +181,7 @@
     }
   };
   
-  $.fn.searchResult.defaults = {
+  $.fn.searchresult.defaults = {
     initDelay: 0,
     initDelayType: 'character', // 'character/word'
     delay: 0,
