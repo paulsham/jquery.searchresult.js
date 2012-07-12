@@ -15,11 +15,15 @@
     </form>
     
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-    <script type="text/javascript" src="js/searchResult.jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.searchresult.js"></script>
     <script type="text/javascript">
       $(function(){
-        $('input, textarea').searchResult({
-          initDelay: 1
+        $('input').searchresult({
+          inputClass: 'asdfasdfasdf'
+        });
+        
+        $('textarea').searchresult({
+          inputClass: 'qwerqwerqwer'
         });
       });
     </script>
