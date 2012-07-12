@@ -1,24 +1,27 @@
 /*
-* jQuery searchresult v0.0
+* jQuery searchresult v0.1
 * by Paul Sham (@paul_sham)
 */
 
 ;(function($){
   "use strict";
   
-  var searchFocus = false;
   var settings = [];
 
   var methods = {
     init: function(options){
-      settings = $.extend($.fn.searchresult.defaults, options);
+      settings = $.extend($.fn.searchresult.defaults, options); // defaults + set options
       
       return this.each(function(){
-        var $searchField = $(this);
-        var $searchResults;
+        var $searchField = $(this),
+            $searchResults;
         initResults();
         
+        // initResults() - add classes and bind events
         function initResults(){
+          $.data($searchField, 'value', '');
+          $.data($searchField, 'resultsFocus', false);
+          
           $searchField
           .addClass(settings.inputClass)
           .after('<ul class="'+settings.resultClass+'"></ul>')
@@ -26,24 +29,26 @@
             keyup: function(e){
               if(e.keyCode == 40 || e.keyCode == 38){
                 navigateSearchResults(e);
-                $(window)
-                .on('keyup', navigateSearchResults)
-                .on('click', hideSearchResults);
+                
+                if($.data($searchField, 'resultsFocus') == false){
+                  $(window).on('keyup', navigateSearchResults)
+                }
               }
               else{
-                searchTyping(e.keyCode);
+                if($.data($searchField, 'value') !== $(this).val()){
+                  $.data($searchField, 'value', $(this).val());
+                  searchTyping(e.keyCode);
+                  
+                  $(window).on('click', hideSearchResults);
+                }
               }
+              
               e.stopPropagation();
             },
             focus: function(){
               $(window)
-              .on('click', hideSearchResults);
-            },
-            blur: function(){
-              if(searchFocus === false){
-                $(this).searchResult('hide');
-                $searchResults.children('li').children('a:focus').blur();
-              }
+              .off('keyup', navigateSearchResults);
+              $.data($searchField, 'resultsFocus', false);
             }
           });
           
@@ -52,7 +57,7 @@
         
         function searchTyping(e){
           var value = $searchField.val();
-          $searchField.searchResult('get', {
+          $searchField.searchresult('get', {
             val: value
           });
         }
@@ -62,32 +67,23 @@
           var $searchResultsFocus = $searchResults.children('li').children('a:focus');
           
           switch(key){
-            case 40:
-              searchFocus = true;
-
-              if($searchResultsFocus.length > 0){
-                if($searchResultsFocus.parent('li').index() == $searchResults.children('li').length - 1){
-                  $searchResults.children('li').first().children('a').focus();
-                }
-                else{
-                  $searchResultsFocus.parent('li').next('li').children('a').focus();
-                }
+            case 40: //down key
+              if($searchResultsFocus.parent('li').index() == $searchResults.children('li').length - 1){
+                $searchField.focus();
+              }
+              else if($searchResultsFocus.length > 0){
+                $searchResultsFocus.parent('li').next('li').children('a').focus();
               }
               else{
                 $searchResults.children('li').first().children('a').focus();
               }
-              
               break;
-            case 38:
-              searchFocus = true;
-              
-              if($searchResultsFocus.length > 0){
-                if($searchResultsFocus.parent('li').index() == 0){
-                  $searchResults.children('li').last().children('a').focus();
-                }
-                else{
-                  $searchResultsFocus.parent('li').prev('li').children('a').focus();
-                }
+            case 38: // up key
+              if($searchResultsFocus.parent('li').index() == 0){
+                $searchField.focus();
+              }
+              else if($searchResultsFocus.length > 0){
+                $searchResultsFocus.parent('li').prev('li').children('a').focus();
               }
               else{
                 $searchResults.children('li').last().children('a').focus();
@@ -96,31 +92,30 @@
               break;
           }
           e.stopPropagation();
-
         }
         
         function hideSearchResults(e){
+          $searchField.searchresult('hide');
           $(window)
           .off('keyup', navigateSearchResults)
           .off('click', hideSearchResults);
-          $searchField.searchResult('hide');
         }
       });
     },
-    get: function(options){
+    get: function(searchStr){
       return this.each(function(){
       
-        var $searchField = $(this);
-        var $searchResults = $searchField.next('ul');
-        var strArray = options.val.split(' ');
+        var $searchField = $(this),
+            $searchResults = $searchField.next('ul'),
+            searchStrArray = searchStr.val.split(' ');
         
         $.ajax({
           url: settings.AJAXpath,
           context: $searchResults,
           dataType: 'json',
           success: function(data){
-            var searchResultsArray = [];
-            var searchResultsHTMLArray = [];
+            var searchResultsArray = [],
+                searchResultsHTMLArray = [];
             
             if(data.length > 0){
             
@@ -135,7 +130,7 @@
               }
               
               $.each(searchResultsArray, function(key, value){
-                searchResultsHTMLArray.push('<li><a href="'+searchResultsArray[key]['link']+'">'+searchResultsArray[key]['text'].replace(new RegExp(strArray.join('|'), 'ig'), '<strong>$&</strong>')+'</a></li>')
+                searchResultsHTMLArray.push('<li><a href="'+searchResultsArray[key]['link']+'">'+searchResultsArray[key]['text'].replace(new RegExp(searchStrArray.join('|'), 'ig'), '<strong>$&</strong>')+'</a></li>')
               });
               
             }
@@ -148,6 +143,7 @@
           }
         });
         
+        // function to allow JSON traversal
         function traverseObj(obj, path) {
           var arr = path.split('.'),
               len = arr.length,
@@ -168,9 +164,10 @@
     },
     hide: function(options){
       return this.each(function(){
-        var $searchField = $(this);
-        var $searchResults = $searchField.next('ul');
+        var $searchField = $(this),
+            $searchResults = $searchField.next('ul');
         
+        $.data($searchField, 'resultsFocus', false);
         $searchResults.removeClass('searchResult-show');
       });
     }

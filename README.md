@@ -4,6 +4,10 @@ jquery.searchresult.js
 A jQuery plugin that passes an input value to a service and formats the JSON object as a search result.
 
 
+Dependencies
+---------------------
+jQuery 1.7+
+
 Usage
 ---------------------
 
@@ -45,3 +49,7 @@ Changelog
 ---------------------
 v0.0
   + Initial upload.
+  
+v0.1
+  + Fix keyboard navigation.
+  + Better written code.
