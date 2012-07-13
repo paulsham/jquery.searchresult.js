@@ -14,13 +14,19 @@
       
       return this.each(function(){
         var $searchField = $(this),
-            $searchResults;
+            $searchResults = settings.results;
         initResults();
         
         // initResults() - add classes and bind events
         function initResults(){
           $.data($searchField, 'value', '');
           $.data($searchField, 'resultsFocus', false);
+          
+          if(settings.results === null){
+            $searchResults = $searchField
+            .after('<ul class="'+settings.resultClass+'"></ul>')
+            .next('ul');
+          }
           
           $searchField
           .addClass(settings.inputClass)
@@ -51,8 +57,6 @@
               $.data($searchField, 'resultsFocus', false);
             }
           });
-          
-          $searchResults = $searchField.next('ul');
         }
         
         function searchTyping(e){
@@ -106,7 +110,7 @@
       return this.each(function(){
       
         var $searchField = $(this),
-            $searchResults = $searchField.next('ul'),
+            $searchResults = (settings.results !== null) ? settings.results : $searchField.next('ul'),
             searchStrArray = searchStr.val.split(' ');
         
         $.ajax({
@@ -193,6 +197,7 @@
     jsonPathText: '_source.body',
     noResultsText: 'No search results found.',
     inputClass: 'searchResult',
+    results: null,
     resultClass: 'searchResult-results'
   };
 })(jQuery);
